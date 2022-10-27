@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Renatotorres.Registro">
+    <ContentPage.Content>
+
+        <ScrollView> 
+            
+        <StackLayout VerticalOptions="Center">
+
+                <Frame BackgroundColor="indigo">
+                    <StackLayout>
+                        <Label x:Name="lblUsuario" Text="" VerticalOptions="CenterAndExpand" 
+                               HorizontalOptions="CenterAndExpand"
+                               TextColor="white" FontFamily="arial" FontSize="16"/>
+                        <Label Text="Bienvenidos al registro estudiante Curso Online " TextColor="white"
+                               FontSize="24"
+                               HorizontalOptions="CenterAndExpand"></Label>
+                    </StackLayout>
+                </Frame>
+                <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition>
+                    </RowDefinition>
+                    <RowDefinition>
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition>
+                        </ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                <Label Text="Nombre estudiante:" Grid.Row="0" Grid.Column="0" FontSize="16"></Label>
+                <Entry x:Name="txtEstudiante" Placeholder="Ingrese el nombre"
+                           Grid.Row="0" Grid.Column="1"></Entry>
+
+                    <Label Text="Monto Inicial:" Grid.Row="1" Grid.Column="0" FontSize="16"></Label>
+                <Entry x:Name="txtMonto" Placeholder="Ingrese el monto"
+                           Grid.Row="1" Grid.Column="1" TextChanged="txtMonto_TextChanged"
+                           Keyboard="Numeric"></Entry>
+
+                    <Label Text="Pago Mensual:" Grid.Row="2" Grid.Column="0" FontSize="16"></Label>
+                <Entry x:Name="txtPago" Placeholder=""
+                           Grid.Row="2" Grid.Column="1" IsReadOnly="True"
+                           Keyboard="Numeric"></Entry>
+
+                    <Button x:Name="btnGuardar" Text="Guardar" BackgroundColor="Indigo" TextColor="White"
+                            Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Clicked="btnGuardar_Clicked"
+                            ></Button>
+            </Grid>
+        </StackLayout>
+        </ScrollView> 
+       
+    </ContentPage.Content>
+          
+</ContentPage>

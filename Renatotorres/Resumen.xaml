@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Renatotorres.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="indigo">
+                <StackLayout>
+                    <Label x:Name="lblUsuario" Text="" VerticalOptions="CenterAndExpand" 
+                               HorizontalOptions="CenterAndExpand"
+                               TextColor="white" FontFamily="arial" FontSize="16"/>
+                    <Label Text="Bienvenidos al registro estudiante Curso Online " TextColor="white"
+                               FontSize="24"
+                               HorizontalOptions="CenterAndExpand"></Label>
+                </StackLayout>
+            </Frame>
+            <StackLayout>
+                <Label Text="Usuario conectado: " FontSize="24" TextColor="Indigo"></Label>
+                <Label x:Name="lblEstudiante" FontSize="24" TextColor="Black"></Label>
+                <Label Text="Total a pagar co interés: " FontSize="24" TextColor="Indigo"></Label>
+                <Label x:Name="lblNotaFinal" FontSize="24" TextColor="Black"></Label>
+                <Button Text="Finalizar sesión" x:Name="btnSalir" Clicked="btnSalir_Clicked"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
